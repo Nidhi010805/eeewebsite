@@ -1,58 +1,44 @@
 import './style.css';
 
-import React from 'react';
-import Header from './components/Header';
-import Section from './components/Section';
-import Footer from './components/Footer';
+import React from "react";
 
-function App() {
-  
-  const notes = [
-    { semester: '1st', subjects: ['Environmental Science', 'Basic electronics', 'Basic Mechanical Engeeneering','Math-1','Engineering Drawing' ,'Chemistry'] },
-    { semester: '2nd', subjects: ['Math-2,', 'C Programming', 'Basic Electrical','Biology','Physics'] },
-    { semester: '3rd', subjects: ['Circuit Theory', ' Electro magnetic', 'EEGC','UHV','EMI','DSD'] },
-    { semester: '4th', subjects: ['Dsp', 'DCMT', 'NM','MPMC','NM LAB'] },
-    
 
-  ];
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import CreateAccountForm from "./components/CreateAccountForm";
+import AboutUs from "./components/pages/AboutUs";
+import Notes from "./components/pages/Notes";
+import Faculty from "./components/pages/Faculty";
+import PlacedSeniors from "./components/pages/Placed";
+import "./App.css";
 
-  const faculty = [
-    { name: 'S.K Mishra', designation: 'HOD', email: 'akumar@bitmesra.ac.in' },
-    { name: 'Ms. S. Verma', designation: 'Assistant Professor', email: 'sverma@bitmesra.ac.in' },
-  ];
 
-  const seniors = [
-    { name: 'Rohan Gupta', company: 'Google', package: '25 LPA' },
-    { name: 'Anjali Sharma', company: 'Microsoft', package: '30 LPA' },
-  ];
 
+
+
+const App = () => {
   return (
-    <div>
+    <Router>
       <Header />
-      <Section
-        id="notes"
-        title="Notes"
-        description="Semester-wise and subject-wise notes are available here."
-        data={notes}
-        type="notes"
-      />
-      <Section
-        id="faculty"
-        title="Faculty Details"
-        description="Meet the department's experienced professors and staff."
-        data={faculty}
-        type="faculty"
-      />
-      <Section
-        id="seniors"
-        title="Placed Seniors"
-        description="Explore details about alumni and their placements."
-        data={seniors}
-        type="seniors"
-      />
+      <Navbar />
+      <div className="content">
+        <div className="sidebar">
+          <CreateAccountForm />
+        </div>
+        <div className="main">
+          <Routes>
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/notes" element={<Notes />} />
+            <Route path="/faculty" element={<Faculty />} />
+            <Route path="/placed-seniors" element={<PlacedSeniors />} />
+          </Routes>
+        </div>
+      </div>
       <Footer />
-    </div>
+    </Router>
   );
-}
+};
 
 export default App;

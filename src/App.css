@@ -1,38 +1,202 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: initial;
+  background-color: #f4f4f4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ h2 {
+  color: #333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+  
+}
+
+/* Header */
+/* .header {
+  
   color: white;
+  text-align: center;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.header img {
+  width: 120px;
+  margin-top: 10px;
+} */
+
+/* Navbar */
+/* .navbar {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+} */
+
+/* .navbar ul {
+  display: flex;
+  gap: 20px;
+} */
+
+/* .navbar ul li a {
+  color: white;
+  padding: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+} */
+
+/* .navbar ul li a:hover {
+  background-color: #555;
+  border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar .auth {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.navbar .auth input {
+  padding: 5px;
+  font-size: 14px;
+} */
+
+/* .navbar button {
+  padding: 6px 15px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.navbar button:hover {
+  background-color: #0056b3;
+} */
+
+/* Sidebar & Main Content */
+.content {
+  display: flex;
+  margin: 20px;
+}
+
+/* .sidebar {
+  width: 30%;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  background-color: #fff;
+} */
+
+.main {
+  width: 70%;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Create Account Form */
+/* .form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.form label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.form button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+/* .footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+} */
+
+/* .footer p {
+  font-size: 14px;
+  margin: 0;
+} */ */
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  /* .sidebar {
+    width: 100%;
+    border-right: none;
+  } */
+
+  /* .main {
+    width: 100%;
+  } */
+
+  /* .navbar ul {
+    flex-direction: column;
+    align-items: center;
   }
+
+  .navbar ul li a {
+    padding: 10px;
+  }
+
+  .navbar .auth {
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .navbar .auth input {
+    margin-bottom: 10px;
+  } */
 }
