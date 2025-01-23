@@ -205,3 +205,22 @@ h3:hover {
   margin-top: 20px;
 }
 
+/* //about us */
+.aboutus{
+
+  
+}
+.heading{
+color: rgb(15, 15, 15);
+margin-bottom: 8px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.subheading{
+   margin-top: 23px;
+   margin-bottom: 3px;
+  color: #991a09;
+  font-family:'sans-serif';
+}
+
+
