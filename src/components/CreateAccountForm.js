@@ -6,7 +6,7 @@ const CreateAccountForm = () => {
     email: "",
     password: "",
     confirmPassword: "",
-    enrollmentNumber: "",
+    RollNumber: "",
     department: "",
     year: "",
   });
@@ -157,12 +157,12 @@ const CreateAccountForm = () => {
       </div>
 
       <div>
-        <label htmlFor="enrollmentNumber">Enrollment Number</label>
+        <label htmlFor="RollNumber">Roll Number</label>
         <input
           type="text"
-          id="enrollmentNumber"
-          name="enrollmentNumber"
-          value={formData.enrollmentNumber}
+          id="RollNumber"
+          name="RolltNumber"
+          value={formData.RollNumber}
           onChange={handleChange}
           style={inputStyle}
           required

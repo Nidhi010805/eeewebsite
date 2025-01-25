@@ -4,6 +4,7 @@ const AboutUs = () => {
   return (
     <div
       style={{
+        
         background: "linear-gradient(135deg, #f0f9ff, #cbebff)", // Light gradient background
         padding: "40px 20px",
         fontFamily:"times new roman",
